@@ -27,7 +27,7 @@ def terbilang(a):
             return 'thirty ' + (terbilang(a % 10) if a % 10 != 0 else '')
         elif a//10 == 5:
             return 'fifty ' + (terbilang(a % 10) if a % 10 != 0 else '')
-        elif a//20 == 4:
+        elif a//20 == 8:
             return 'eighty ' + (terbilang(a % 10) if a % 10 != 0 else '')
         else:
             return terbilang(a // 10) + ('ty' if (a // 10) != 8 else 'y') + terbilang(a % 10)
